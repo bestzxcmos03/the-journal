@@ -1,0 +1,17 @@
+
+
+heroku login (Enter your Heroku credentials)
+git init
+git add .
+git commit -m “initial commit”
+heroku create (You should see two links after running this command. Copy the second one)
+git remote add heroku PASTE THE LINK YOU JUST COPIED
+git push heroku master
+Once you run the last command Heroku will start to run some tests on your app. If everything goes right you should see a successful deploy message. Now you’re able to navigate to your app by running:
+
+heroku open
+Anytime you make changes to your app and want to re-deploy the only commands you need to run are:
+
+git add .
+git commit -m “any message goes here”
+git push heroku master
